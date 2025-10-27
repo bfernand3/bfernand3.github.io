@@ -241,6 +241,25 @@ VAR. CAPITATA L.) GROWN IN ORGANIC AND CONVENTIONALSYSTEMS UNDER GREENHOUSE COND
 
 <p>Per veure si le diferència és significativa ho veurem a la pàgina del professor on es troba la 
  <a href="https://pompeu.neocities.org/t/"> t de student</a></p> 
- 
+  
+   <script>
+    // Mode clar/fosc amb canvi d'icona
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = themeToggle.querySelector('i');
+
+    themeToggle.addEventListener('click', () => {
+      if (document.body.getAttribute('data-bs-theme') === 'dark') {
+        document.body.setAttribute('data-bs-theme', 'light');
+        themeIcon.classList.remove('fa-sun');
+        themeIcon.classList.add('fa-moon');
+      } else {
+        document.body.setAttribute('data-bs-theme', 'dark');
+        themeIcon.classList.remove('fa-moon');
+        themeIcon.classList.add('fa-sun');
+      }
+    });
+  </script>
+
+  
 </body>
 </html>
